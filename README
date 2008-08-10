@@ -171,9 +171,8 @@ EXPORTS
 BUGS
     Plenty I'm sure.
 
-UPDATES
-    Updates to this package will be posted to my weblog
-    http://www.netalive.org/swsu/ and CPAN as soon as I get access there.
+REVISION HISTORY
+	0.2: Fixed default getter/setter methods. Thanks to Brian Franchuk for reporting the problem.
 
 COPYRIGHT
     Copyright (C) 2004 Henning Koch. All rights reserved.

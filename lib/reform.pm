@@ -127,9 +127,9 @@ sub add_field
 	my $class = $self;
 	ref $class and $class = ref $class;
 	eval "sub $class\:\:$field : lvalue { \$_[0]->{_$field} }";
-	eval "sub $class\:\:get_$field { \$_[0]->{$field} }"
+	eval "sub $class\:\:get_$field { \$_[0]->{_$field} }"
 		unless $class->can("get_$field");
-	eval "sub $class\:\:set_$field { \$_[0]->{$field} = \$_[1] }"
+	eval "sub $class\:\:set_$field { \$_[0]->{_$field} = \$_[1] }"
 		unless $class->can("set_$field");
 	$@ and die "Could not add field $field for class $class: $@";
 	push @{$fields{$class}}, $field;
@@ -342,10 +342,9 @@ C<self>, C<class>, C<base>.
 
 Plenty I'm sure.
 
-=head1 UPDATES
+=head1 REVISION HISTORY
 
-Updates to this package will be posted to my weblog L<http://www.netalive.org/swsu/>
-and CPAN as soon as I get access there.
+0.2: Fixed default getter/setter methods. Thanks to Brian Franchuk for reporting the problem.
 
 =head1 COPYRIGHT
 
