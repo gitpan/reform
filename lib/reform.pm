@@ -6,7 +6,7 @@
 use strict;
 package reform;
 
-our $VERSION = 0.1;
+our $VERSION = 0.3;
 
 use Filter::Simple;
 
@@ -342,9 +342,9 @@ C<self>, C<class>, C<base>.
 
 Plenty I'm sure.
 
-=head1 REVISION HISTORY
+=head1 UPDATES
 
-0.2: Fixed default getter/setter methods. Thanks to Brian Franchuk for reporting the problem.
+Will be posted to CPAN.
 
 =head1 COPYRIGHT
 

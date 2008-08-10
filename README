@@ -171,8 +171,8 @@ EXPORTS
 BUGS
     Plenty I'm sure.
 
-REVISION HISTORY
-	0.2: Fixed default getter/setter methods. Thanks to Brian Franchuk for reporting the problem.
+UPDATES
+	Will be posted to CPAN.
 
 COPYRIGHT
     Copyright (C) 2004 Henning Koch. All rights reserved.
